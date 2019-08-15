@@ -1,0 +1,19 @@
+{
+  "name": "fashion_shop",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "fashion_shop"
+  },
+  "author": "Maciej Preus",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
