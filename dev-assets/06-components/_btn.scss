@@ -4,65 +4,56 @@
     display: inline-block;
     font-size: $font-size-5;
     font-weight: 700;
-    line-height: $line-height-base;
-    padding: .75rem 0;
-    text-align: center;
+    line-height: $line-height-sm;
+    padding: 1rem 1.25rem;
     text-transform: uppercase;
     transition: all .25s ease-in-out;
-    width: $grid-base * 22;
 
     &:hover {
         text-decoration: none;
     }
 
-    &--primary {
-        background-color: $blue-light;
-        color: $blue-text;
-
-        &:hover {
-            background-color: darken($blue-light, 15%);
-            color: $white;
-        }
+    &__icon {
+        margin-left: .5rem;
     }
 
     &--accent {
-        background-color: $green;
+        background-color: $accent;
         color: $white;
 
         &:hover {
-            background-color: darken($green, 15%);
-            color: $white;
-        }
-    }
-
-    &--dark-blue {
-        background-color: $blue-dark;
-        color: $white;
-
-        &:hover {
-            background-color: darken($blue-dark, 15%);
+            background-color: darken($accent, 15%);
             color: $white;
         }
     }
 
     &--light {
         background-color: $white;
-        color: $blue-text;
+        color: $gray-very-dark;
 
         &:hover {
             background-color: darken($white, 15%);
-            color: $blue-text;
+            color: $gray-very-dark;
         }
     }
 
     &--outline {
         background-color: transparent;
-        border: 2px solid $white;
+        border: 3px solid $white;
         color: $white;
+        line-height: 1;
+        font-size: $font-size-3;
+        padding: .55rem 1rem;
         
         &:hover {
             color: darken($white, 15%);
-            border: 2px solid darken($white, 15%);
+            border: 3px solid darken($white, 15%);
         }
+    }
+
+    &--small {
+        border-radius: 3px;
+        font-size: $font-size-9;
+        padding: .55rem .75rem;
     }
 }

@@ -1,11 +1,11 @@
-// Od srednich w gore
+// mid-sized and up
 @mixin medium-up {
     @media (min-width: #{$bp-medium}) {
         @content
     }
 }
 
-// Od duzych w gore
+// large-sized and up
 @mixin large-up {
     @media (min-width: #{$bp-large}) {
         @content

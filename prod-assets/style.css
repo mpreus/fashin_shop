@@ -5,7 +5,7 @@ body {
   background-color: #FFFFFF;
   color: #797979;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0; }
 
@@ -26,15 +26,15 @@ p {
   margin-bottom: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.125rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.2;
   margin: 0; }
 
 a {
-  color: #797979;
+  color: #444444;
   text-decoration: none; }
   a:hover {
-    color: #797979;
+    color: #444444;
     text-decoration: underline; }
 
 .o-col {
@@ -101,49 +101,45 @@ a {
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.5;
-  padding: .75rem 0;
-  text-align: center;
+  line-height: 1.2;
+  padding: 1rem 1.25rem;
   text-transform: uppercase;
-  transition: all .25s ease-in-out;
-  width: 220px; }
+  transition: all .25s ease-in-out; }
   .c-btn:hover {
     text-decoration: none; }
-  .c-btn--primary {
-    background-color: #D3EAFA;
-    color: #3B99E1; }
-    .c-btn--primary:hover {
-      background-color: #8ec9f2;
-      color: #FFFFFF; }
+  .c-btn__icon {
+    margin-left: .5rem; }
   .c-btn--accent {
-    background-color: #60DC64;
+    background-color: #F1C40F;
     color: #FFFFFF; }
     .c-btn--accent:hover {
-      background-color: #2bc430;
-      color: #FFFFFF; }
-  .c-btn--dark-blue {
-    background-color: #3E5CC5;
-    color: #FFFFFF; }
-    .c-btn--dark-blue:hover {
-      background-color: #2a408c;
+      background-color: #aa8a0a;
       color: #FFFFFF; }
   .c-btn--light {
     background-color: #FFFFFF;
-    color: #3B99E1; }
+    color: #444444; }
     .c-btn--light:hover {
       background-color: #d9d9d9;
-      color: #3B99E1; }
+      color: #444444; }
   .c-btn--outline {
     background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF; }
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    line-height: 1;
+    font-size: 1.5rem;
+    padding: .55rem 1rem; }
     .c-btn--outline:hover {
       color: #d9d9d9;
-      border: 2px solid #d9d9d9; }
+      border: 3px solid #d9d9d9; }
+  .c-btn--small {
+    border-radius: 3px;
+    font-size: 0.5625rem;
+    padding: .55rem .75rem; }
 
 .c-heading {
-  color: #3B99E1;
+  color: #444444;
   line-height: 1.2;
+  letter-spacing: -0.05rem;
   margin-bottom: 5px; }
   .c-heading--level1 {
     font-size: 2.5rem; }
@@ -156,10 +152,6 @@ a {
       .c-heading--level2 {
         font-size: 2.5rem; } }
   .c-heading--level3 {
-    font-size: 1.5rem; }
-  .c-heading--level4 {
-    font-size: 1.125rem; }
-  .c-heading--level5 {
     font-size: 1rem; }
   .c-heading--upper {
     text-transform: uppercase; }

@@ -7,16 +7,16 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: $font-size-4;
-    line-height: $line-height-base;
+    font-size: $font-size-5;
+    line-height: $line-height-sm;
     margin: 0;
 }
 
 a {
-    color: $gray-dark;
+    color: $gray-very-dark;
     text-decoration: none;
     &:hover {
-        color: $gray-dark;
+        color: $gray-very-dark;
         text-decoration: underline;
     }
 }

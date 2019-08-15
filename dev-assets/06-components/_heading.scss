@@ -1,6 +1,7 @@
 .c-heading {
-    color: $blue-text;
+    color: $gray-very-dark;
     line-height: $line-height-sm;
+    letter-spacing: $letter-spacing-condenced;
     margin-bottom: $grid-base / 2;
 
     &--level1 {
@@ -20,14 +21,6 @@
     }
 
     &--level3 {
-        font-size: $font-size-3;
-    }
-
-    &--level4 {
-        font-size: $font-size-4;
-    }
-
-    &--level5 {
         font-size: $font-size-5;
     }
 
