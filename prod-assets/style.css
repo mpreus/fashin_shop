@@ -185,22 +185,49 @@ a {
 .c-list--unstyled {
   list-style-type: none; }
 
-.c-nav__item {
-  color: #FFFFFF;
-  display: block;
-  font-size: 1rem;
-  padding-bottom: 7.5px;
-  padding-top: 7.5px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%; }
-  .c-nav__item:hover {
-    color: #FFFFFF; }
+.c-nav {
+  margin-bottom: 20px; }
   @media (min-width: 1200px) {
-    .c-nav__item {
-      display: inline-block;
-      margin-left: 25px;
-      width: auto; } }
+    .c-nav {
+      margin-bottom: 0; } }
+  .c-nav__item {
+    color: #444444;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%; }
+    .c-nav__item:hover {
+      color: #444444; }
+    @media (min-width: 1200px) {
+      .c-nav__item {
+        display: inline-block;
+        margin-right: 40px;
+        width: auto; } }
+
+.c-input {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 1rem 1.25rem;
+  outline: none; }
+  .c-input::placeholder {
+    color: #D1D1D1; }
+  .c-input::-moz-placeholder {
+    color: #D1D1D1;
+    opacity: 1; }
+  .c-input:-ms-placeholder {
+    color: #D1D1D1; }
+  .c-input--newsletter {
+    border-radius: 5px 0 0 5px;
+    padding: .7rem 1.5rem; }
 
 .t-clinic-locator {
   background: linear-gradient(45deg, #3E5CC5 0%, #5B8AF8 100%);

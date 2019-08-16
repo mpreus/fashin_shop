@@ -1,22 +1,27 @@
 .c-nav {
+    margin-bottom: $grid-base * 2;
+    @include large-up {
+        margin-bottom: 0;
+    }
 
     &__item {
-        color: $white;
+        color: $gray-very-dark;
         display: block;
-        font-size: $font-size-5;
-        padding-bottom: $grid-base * .75;
-        padding-top: $grid-base * .75;
+        font-size: $font-size-6;
+        font-weight: 700;
+        padding-bottom: $grid-base * 2.5;
+        padding-top: $grid-base * 2.5;
         text-align: center;
         text-transform: uppercase;
         width: 100%;
 
         &:hover {
-            color: $white;
+            color: $gray-very-dark;
         }
 
         @include large-up {
             display: inline-block;
-            margin-left: $grid-base * 2.5;
+            margin-right: $grid-base * 4;
             width: auto;
         }
     }
