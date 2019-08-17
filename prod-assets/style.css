@@ -252,6 +252,75 @@ a {
         margin-bottom: 0;
         margin-right: 50px; } }
 
+.c-product-card {
+  margin-bottom: 40px; }
+  .c-product-card__top {
+    background-color: #FFFFFF;
+    height: 310px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%; }
+  .c-product-card__picture {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .c-product-card__cart {
+    display: flex;
+    align-items: center;
+    background-color: #F2F3F5;
+    bottom: 15px;
+    height: 40px;
+    justify-content: space-between;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 220px; }
+  .c-product-card__cart-icon {
+    text-align: center;
+    flex: 0 0 20%; }
+  .c-product-card__cart-text {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    color: #797979;
+    flex: 0 0 60%;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: uppercase; }
+  .c-product-card__meta {
+    display: flex;
+    font-size: 0.875rem;
+    justify-content: space-between; }
+  .c-product-card__color {
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    width: 12px; }
+    .c-product-card__color--one {
+      background-color: #DABDFE; }
+    .c-product-card__color--two {
+      background-color: #FEBDBD; }
+    .c-product-card__color--three {
+      background-color: #FECFBD; }
+    .c-product-card__color--four {
+      background-color: #BDE6FE; }
+    .c-product-card__color--five {
+      background-color: #FEDABD; }
+    .c-product-card__color--six {
+      background-color: #E6BDFE; }
+    .c-product-card__color--seven {
+      background-color: #458A5C; }
+    .c-product-card__color--eight {
+      background-color: #8A6245; }
+    .c-product-card__color--nine {
+      background-color: #3F5587; }
+  .c-product-card__price {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: bold; }
+
 .t-clinic-locator {
   background: linear-gradient(45deg, #3E5CC5 0%, #5B8AF8 100%);
   padding-bottom: 45px;
