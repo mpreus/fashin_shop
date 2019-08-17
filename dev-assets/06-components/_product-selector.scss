@@ -1,0 +1,20 @@
+.c-product-selector {
+	display: inline-block;
+
+	&__item {
+		color: $gray-very-dark;
+		display: block;
+		font-size: $font-size-6;
+		text-transform: uppercase;
+		margin-bottom: $grid-base * 2;
+		&:hover {
+			color: $accent;
+		}
+
+		@include large-up {
+			display: inline-block;
+			margin-bottom: 0;
+			margin-right: $grid-base * 5;
+		}
+	}
+}
