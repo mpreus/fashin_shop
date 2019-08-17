@@ -2,19 +2,20 @@
     text-align: center;
 
     &__image {
-        display: flex;
-        justify-content: center;
-        /** Najwyzsza ikona ma taka wysokosc **/
-        height: $grid-base * 6;
-        margin-bottom: $grid-base * 2.5;
+        margin-bottom: $grid-base * 1.5;
     }
 
-    &__icon {
-        align-self: center;
+    &__name {
+        color: $accent;
+        display: block;
+        font-size: $font-size-5;
+        font-weight: bold;
+        line-height: $line-height-sm;
+        text-transform: uppercase;
     }
-
-    &__text {
-        font-size: $font-size-6;
-        margin-top: $grid-base * 1.5;
+    &__info {
+        color: $gray-dark;
+        display: block;
+        font-size: $font-size-7;
     }
 }

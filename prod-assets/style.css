@@ -161,16 +161,18 @@ a {
 .c-icon-box {
   text-align: center; }
   .c-icon-box__image {
-    display: flex;
-    justify-content: center;
-    /** Najwyzsza ikona ma taka wysokosc **/
-    height: 60px;
-    margin-bottom: 25px; }
-  .c-icon-box__icon {
-    align-self: center; }
-  .c-icon-box__text {
-    font-size: 0.875rem;
-    margin-top: 15px; }
+    margin-bottom: 15px; }
+  .c-icon-box__name {
+    color: #F1C40F;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase; }
+  .c-icon-box__info {
+    color: #797979;
+    display: block;
+    font-size: 0.75rem; }
 
 .c-label {
   display: block;
