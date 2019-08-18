@@ -1,67 +1,69 @@
 .t-site-header {
-    background: url('../images/header-tlo.jpg') 0 0 no-repeat;
-
-    @include large-up {
-        clip-path: ellipse(68% 450px at 50% 28%);
-        padding-bottom: $grid-base * 4;
-    }
 
     &__top {
-        padding-bottom: $grid-base * 2.5;
-        padding-top: $grid-base * 2.5;
-    }
-
-    &__menu {
-        margin-top: $grid-base * 2;
-
+        background-color: $white;
+        padding-bottom: $grid-base * 2;
+       
         @include large-up {
-            text-align: right;
-            margin-top: 0;
+            padding-bottom: 0;
         }
     }
 
-    &__divider {
-        background-color: $white;
-        height: 1px;
-        opacity: .75;
-    }
-
-    &__hero {
-        padding-bottom: $grid-base * 5;
-        padding-top: $grid-base * 5;
-        margin: 0 auto;
+    &__icons {
         text-align: center;
         
         @include large-up {
-            padding-bottom: $grid-base * 12;
-            padding-top: $grid-base * 11;
-            max-width: 800px;
+            text-align: right;
+        }
+    }
 
+    &__icon {
+        display: inline-block;
+        margin-left: $grid-base * 1.5;
+        position: relative;
+    }
+
+    &__number {
+        background-color: $accent;
+        border-radius: 50%;
+        bottom: 0;
+        color: $white;
+        font-size: 10px;
+        font-weight: bold;
+        height: 14px;
+        line-height: 14px;
+        position: absolute;
+        right: -7px;
+        text-align: center;
+        width: 14px;
+    }
+    
+    &__hero {
+        background: $yellow-gradient;
+        color: $gray-very-dark;
+        padding-bottom: $grid-base * 8;
+        padding-top: $grid-base * 8;
+        
+        @include large-up {
+            background: url("../images/header-postac.png") 5% 100% no-repeat, $yellow-gradient;
+            padding-bottom: $grid-base * 18;
+            padding-top: $grid-base * 22;
+        }
+    }
+
+    &__hero-right {
+        @include large-up {
+            padding-left: $grid-base * 54;
+            padding-right: 0;
         }
     }
 
     &__intro-text {
-        color: $white;
-        font-size: $font-size-4;
-        margin-bottom: $grid-base * 2;
-        margin-top: $grid-base * 3;
-        
-        @include large-up {
-            font-size: $font-size-3;
-            line-height: 1.66;
-            margin-bottom: $grid-base * 6;
-        }
+        font-size: $font-size-3;
+        text-transform: uppercase;
     }
 
-    &__btn-divider {
-        color: $white;
-        display: block;
-        font-size: $font-size-5;
-        font-weight: 700;
-        margin: $grid-base * 2;
-
-        @include medium-up {
-            display: inline-block;
-        }
+    &__cta {
+        margin-top: $grid-base * 5;
     }
 }
