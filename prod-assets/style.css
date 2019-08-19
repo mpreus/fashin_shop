@@ -197,8 +197,8 @@ a {
     display: block;
     font-size: 0.875rem;
     font-weight: 700;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
     width: 100%; }
@@ -253,7 +253,7 @@ a {
         margin-right: 50px; } }
 
 .c-product-card {
-  margin-bottom: 40px; }
+  margin-bottom: 50px; }
   .c-product-card__top {
     background-color: #FFFFFF;
     height: 310px;
@@ -517,6 +517,15 @@ a {
 
 .t-site-header__cta {
   margin-top: 50px; }
+
+.t-product-list {
+  background-color: #F2F3F5; }
+  .t-product-list .c-product-selector {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  .t-product-list .c-pagination {
+    margin-bottom: 70px;
+    margin-top: 40px; }
 
 .u-bg-white {
   background-color: #FFFFFF; }

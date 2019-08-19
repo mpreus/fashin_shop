@@ -1,0 +1,14 @@
+.t-product-list {
+	background-color: $gray-light;
+
+
+	& .c-product-selector {
+		margin-bottom: $grid-base * 5;
+		margin-top: $grid-base * 5;
+	}
+
+	& .c-pagination {
+		margin-bottom: $grid-base * 7;
+		margin-top: $grid-base * 4;
+	}
+}
