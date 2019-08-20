@@ -1,0 +1,88 @@
+.t-promoted {
+	margin-top: $grid-base * 8;
+
+	& .o-row {
+		margin-bottom: $grid-base * 3;
+	}
+
+	&__item {
+		padding-bottom: $grid-base * 6.5;
+		padding-left: $grid-base * 1.5;
+		padding-right: $grid-base * 1.5;
+		padding-top: $grid-base * 6.5;
+
+		&--first {
+			background-color: $accent;
+			padding-bottom: $grid-base * 7;
+			padding-top: $grid-base * 7;
+
+			@include medium-up {
+				background: url("../images/promo-1.jpg") no-repeat;
+			}
+
+			@include large-up {
+				padding-left: $grid-base * 7;
+			}
+		}
+
+		&--second {
+			background-color: #2BB9D5;
+
+			@include medium-up {
+				background: url("../images/promo-2.jpg") no-repeat;
+			}
+
+			@include large-up {
+				padding-left: $grid-base * 7;
+			}
+
+			& .c-btn {
+				margin-top: $grid-base * 2.5;
+			}
+		}
+
+		&--third {
+			background-color: #F3BBC4;
+
+			@include medium-up {
+				background: url("../images/promo-3.jpg") no-repeat;
+			}
+
+			@include large-up {
+				padding-left: $grid-base * 28.5;
+			}
+
+			& .c-btn {
+				margin-top: $grid-base * 2.5;
+			}
+		}
+	}
+
+	&__text {
+		color: $white;
+		font-weight: bold;
+		line-height: $line-height-sm;
+
+		&--size1 {
+			display: block;
+			font-size: $font-size-2;
+			margin-bottom: $grid-base;
+		}
+
+		&--size2 {
+			display: block;
+			font-size: $font-size-3;
+		}
+		&--size3 {
+			font-size: $font-size-3;
+		}
+	}
+
+	&__code {
+		& .c-btn {
+			margin-left: $grid-base * 2;
+		}
+	}
+
+
+}
