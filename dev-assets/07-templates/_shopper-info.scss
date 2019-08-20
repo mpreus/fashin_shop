@@ -1,0 +1,12 @@
+.t-shopper-info {
+	padding-bottom: $grid-base * 7;
+	padding-top: $grid-base * 6;
+
+	&__item {
+		margin-bottom: $grid-base * 6;
+
+		@include large-up {
+			margin-bottom: 0;
+		}
+	}
+}

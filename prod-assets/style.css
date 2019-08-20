@@ -622,8 +622,18 @@ a {
         width: 72%; } }
   .t-newsletter__submit {
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
     margin-left: -3px;
     padding: .7rem 1.75rem; }
+
+.t-shopper-info {
+  padding-bottom: 70px;
+  padding-top: 60px; }
+  .t-shopper-info__item {
+    margin-bottom: 60px; }
+    @media (min-width: 1200px) {
+      .t-shopper-info__item {
+        margin-bottom: 0; } }
 
 .u-bg-white {
   background-color: #FFFFFF; }
