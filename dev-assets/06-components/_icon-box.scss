@@ -3,6 +3,10 @@
 
     &__image {
         margin-bottom: $grid-base * 1.5;
+
+        &:hover {
+            opacity: .8;
+        }
     }
 
     &__name {

@@ -11,9 +11,15 @@
 	}
 
 	&__picture {
+		opacity: .9;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
+		
+		&:hover {
+		filter: contrast(108%);
+		opacity: 1.2;
+		}
 	}
 
 	&__cart {
@@ -90,7 +96,6 @@
 	&__price {
 		display: block;
 		font-size: $font-size-4;
-		font-weight: bold;
 	}
 
 }
