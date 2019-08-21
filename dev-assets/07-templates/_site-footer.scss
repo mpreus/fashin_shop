@@ -1,72 +1,78 @@
 .t-site-footer {
-    padding-left: $gutter;
-    padding-right: $gutter;
+    background-color: $gray-very-dark;
 
     & .o-row {
-        padding-bottom: $grid-base * 4;
-        padding-top: $grid-base * 5;
+        padding-bottom: $grid-base * 1.5;
+        padding-top: $grid-base * 4;
     }
 
     &__item {
-        flex-basis: auto;
-        padding-left: $gutter;
+        margin-bottom: $grid-base * 3;
 
-        &:first-child {
-            @include medium-up {
-                width: 28%;
-            }
-        }
-
-        &:nth-child(2) {
-            @include medium-up {
-                width: 28%;
-            }
-        }
-
-        &:nth-child(3) {
-            @include medium-up {
-                width: 25%;
-            }
-        }
-
-        &:nth-child(4) {
-            @include medium-up {
-                width: 15%;
-            }
+        @include large-up {
+            margin-bottom: 0;
         }
     }
 
-    &__heading {
-        align-items: center;
-        display: flex;
-        height: $grid-base * 6;
+    &__item-last {
+        width: 290px;
+
+        @include large-up {
+            margin-left: $grid-base * 7.5;
+        }
     }
 
-    &__text-heading {
-        color: $gray-dark;
-    }
-
-    &__address {
-        padding-top: $grid-base * 2;
-    }
-
-    &__label {
+    &__text {
+        color: $white;
         display: block;
-        font-size: $font-size-5;
-        margin-bottom: $grid-base * 1;
-    }
-
-    &__contact-item {
-        line-height: $line-height-lg;
+        font-size: $font-size-6;
         margin-bottom: $grid-base * 2;
     }
 
-    &__copy {
-        padding-bottom: $grid-base * 2.5;
-        padding-top: $grid-base * 2.5;
+    &__link {
+        color: $white;
+        display: block;
+        font-size: $font-size-6;
+        margin-bottom: 12px;
+        
+        &:hover {
+            color: $white;
+        }
     }
 
-    &__copy-text {
+    &__address {
+        padding-right: $grid-base * 4;
+    }
+
+    &__info {
+        line-height: 2;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__links-first {
+        width: 55%;
+    }
+    
+    &__links-second {
+        width: 45%;
+    }
+
+    &__instagrams {
+        margin-bottom: $grid-base * 1.5;
+    }
+
+    &__instagram {
+        margin-right: 3px;
+    }
+
+    &__copy {
+        background-color: $gray-light;
+        color: $gray-very-dark;
         font-size: $font-size-7;
+        padding-bottom: $grid-base * 2.5;
+        padding-top: $grid-base * 2.5;
     }
 }
