@@ -98,4 +98,31 @@
 		font-size: $font-size-4;
 	}
 
+	
+	&__big-picture {
+		height: 360px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 180px;
+		
+		&:hover {
+		filter: contrast(108%);
+		opacity: 1.2;
+		}
+	}
+
+	&__big-picture-text {
+		padding-left: 65px;
+	}
+
+	&__big-top {
+		background-color: $white;
+		height: $grid-base * 50;
+		margin-bottom: $grid-base * 2;
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+
 }

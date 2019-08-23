@@ -119,7 +119,7 @@ a {
     background-color: #FFFFFF;
     color: #444444; }
     .c-btn--light:hover {
-      background-color: #d9d9d9;
+      background-color: #cccccc;
       color: #444444; }
   .c-btn--outline {
     background-color: transparent;
@@ -326,6 +326,24 @@ a {
   .c-product-card__price {
     display: block;
     font-size: 1.125rem; }
+  .c-product-card__big-picture {
+    height: 360px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 180px; }
+    .c-product-card__big-picture:hover {
+      filter: contrast(108%);
+      opacity: 1.2; }
+  .c-product-card__big-picture-text {
+    padding-left: 65px; }
+  .c-product-card__big-top {
+    background-color: #FFFFFF;
+    height: 500px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%; }
 
 .t-newsletter {
   background-color: #F2F3F5;
