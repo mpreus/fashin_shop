@@ -347,6 +347,7 @@ a {
 
 .t-newsletter {
   background-color: #F2F3F5;
+  margin-top: 20px;
   padding-bottom: 45px;
   padding-left: 10px;
   padding-right: 10px;
@@ -572,6 +573,34 @@ a {
     @media (min-width: 1200px) {
       .t-shopper-info__item {
         margin-bottom: 0; } }
+
+.t-about-company {
+  background-color: #444444; }
+  .t-about-company h2 {
+    color: #F1C40F;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+  .t-about-company h3 {
+    color: #F1C40F;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 40px; }
+  .t-about-company h4 {
+    color: #F2F3F5;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+  .t-about-company p {
+    color: #F2F3F5;
+    font-size: 1.125rem;
+    text-align: left; }
+  .t-about-company .c-product-selector {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  .t-about-company .c-pagination {
+    margin-bottom: 70px;
+    margin-top: 40px; }
 
 .u-bg-white {
   background-color: #FFFFFF; }
