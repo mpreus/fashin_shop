@@ -254,6 +254,8 @@ a {
         display: inline-block;
         margin-bottom: 0;
         margin-right: 50px; } }
+  .c-product-selector a:hover {
+    color: #F1C40F; }
 
 .c-product-card {
   margin-bottom: 50px; }

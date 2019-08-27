@@ -1,8 +1,6 @@
 .c-product-selector {
 	display: inline-block;
 
-	
-
 	&__item {
 		color: $gray-very-dark;
 		display: block;
@@ -18,5 +16,8 @@
 			margin-bottom: 0;
 			margin-right: $grid-base * 5;
 		}
+	}
+	a:hover {
+		color: $accent;
 	}
 }
