@@ -581,12 +581,13 @@ a {
   .t-about-company h2 {
     color: #F1C40F;
     font-size: 2.5rem;
+    padding-top: 30px;
     text-transform: uppercase; }
   .t-about-company h3 {
     color: #F1C40F;
     font-size: 1.5rem;
-    margin-bottom: 20px;
-    margin-top: 40px; }
+    padding-bottom: 12px;
+    padding-top: 20px; }
   .t-about-company h4 {
     color: #F2F3F5;
     font-size: 1.125rem;
@@ -596,6 +597,7 @@ a {
   .t-about-company p {
     color: #F2F3F5;
     font-size: 1.125rem;
+    line-height: 1.8;
     text-align: left; }
   .t-about-company .c-product-selector {
     margin-bottom: 50px;
