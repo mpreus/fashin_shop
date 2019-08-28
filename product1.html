@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://use.fontawesome.com/86a7149259.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="landing page">
@@ -84,15 +85,34 @@
 							<div class="c-product-card__cart">
 								<span class="c-product-card__big-picture-text">Add to cart</span>
 							</div> 	
-							
 						</div>
-						<div class="c-product-card__cart-icon">
-							<img src="images/star_small.png">
-							<img src="images/star_small.png">
-							<img src="images/star_small.png">
-							<img src="images/star_small.png">
-							<img src="images/star_small.png">
+						<div id="rating" class="c-product-card__cart-icon">
+		<!-- tu dopisać klasy dla spanów, w tym dla 'hover' i 'selected' -->
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
 						</div>
+						<div class="hidden">
+				            <input type="radio" name="rating" value="1">
+				            <input type="radio" name="rating" value="2">
+				            <input type="radio" name="rating" value="3">
+				            <input type="radio" name="rating" value="4">
+				            <input type="radio" name="rating" value="5">
+				        </div>
+
+
 						<div class="c-product-card__bottom">
 							<div class="c-product-card__meta">
 								<div class="c-product-card__name">Short summer dress</div>

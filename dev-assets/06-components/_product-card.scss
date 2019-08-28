@@ -39,6 +39,10 @@
 	&__cart-icon {
 		text-align: center;
 		flex: 0 0 20%;
+
+		.product1-star {
+			font-size: $font-size-4;
+		}
 	}
 
 	&__cart-text {
@@ -124,4 +128,16 @@
 		width: 100%;
 	}
 
+	.hidden {
+		display: none;
+	}
 }
+
+.hovered {
+	color: $accent;
+}
+
+.selected {
+	color: $accent;
+}
+

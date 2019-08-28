@@ -289,6 +289,8 @@ a {
   .c-product-card__cart-icon {
     text-align: center;
     flex: 0 0 20%; }
+    .c-product-card__cart-icon .product1-star {
+      font-size: 1.125rem; }
   .c-product-card__cart-text {
     border-left: 1px solid #FFFFFF;
     border-right: 1px solid #FFFFFF;
@@ -346,6 +348,14 @@ a {
     position: relative;
     text-align: center;
     width: 100%; }
+  .c-product-card .hidden {
+    display: none; }
+
+.hovered {
+  color: #F1C40F; }
+
+.selected {
+  color: #F1C40F; }
 
 .t-newsletter {
   background-color: #F2F3F5;
