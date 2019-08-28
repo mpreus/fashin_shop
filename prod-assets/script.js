@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	
+/* star-rating system for a product */
 	let stars = $("#rating .product1-star");
 	let radios = $(":radio[name='rating']");
 
@@ -16,8 +18,9 @@ $(document).ready(function() {
 
 		$(this).siblings().removeClass("selected");
 		$(this).prevAll().addBack().addClass("selected");
-
 	});
+
+/* another elements below */
 
 
 
