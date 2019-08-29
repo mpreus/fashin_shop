@@ -256,6 +256,11 @@ a {
         margin-right: 50px; } }
   .c-product-selector a:hover {
     color: #F1C40F; }
+  .c-product-selector .read-more-span {
+    color: #F1C40F;
+    cursor: pointer; }
+  .c-product-selector .read-more-para {
+    display: none; }
 
 .c-product-card {
   margin-bottom: 50px; }
@@ -601,9 +606,9 @@ a {
   .t-about-company h4 {
     color: #F2F3F5;
     font-size: 1.125rem;
-    font-weight: bold;
     margin-bottom: 10px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    cursor: pointer; }
   .t-about-company p {
     color: #F2F3F5;
     font-size: 1.125rem;
@@ -615,6 +620,8 @@ a {
   .t-about-company .c-pagination {
     margin-bottom: 70px;
     margin-top: 40px; }
+  .t-about-company p.values-content {
+    display: none; }
 
 .u-bg-white {
   background-color: #FFFFFF; }
