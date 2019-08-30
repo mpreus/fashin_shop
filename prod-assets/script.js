@@ -25,8 +25,9 @@ $(document).ready(function() {
 	let historyTrigger = $(".read-more-span"),
 		historyContent = $(".read-more-para");
 
-	historyTrigger.on("click", function() {
-		historyContent.fadeToggle(1200);
+	historyTrigger.on("click", function(e) {
+		e.preventDefault();
+		historyContent.fadeToggle(1000);
 		if ( historyTrigger.text() === "read more..." ) {
 			historyTrigger.text("read less...");
 		} else {
@@ -37,10 +38,42 @@ $(document).ready(function() {
 /* our values - show & hide */
 	let valueTitle = $("h4.values-title");
 
-	valueTitle.on("click", function() {
+	valueTitle.on("click", function(e) {
+		e.preventDefault();
 		$(this).next().toggle(700);
 	})
 	
+
+/* newsletter e-mail validation */
+	$("input.newsletter-button").on("click", function(e) {
+		e.preventDefault();
+		
+		var emailAddress = $("input.newsletter-email");
+		
+		if ( emailAddress.val() === "" || emailAddress.val().indexOf("@") <= 0 || emailAddress.val().length <= 6)  {
+			Swal.fire({
+				type: 'error',
+				title: 'Oops...',
+				text: 'Something went wrong!',
+				footer: 'Please, verify your e-mail address',
+				confirmButtonColor: '#f27474',
+				timer: 6000
+			});
+			$("input.newsletter-email").val("");
+		}
+		else {
+			Swal.fire({
+				type: 'success',
+				title: 'Bravo!',
+				text: 'You have enrolled for our newsletter!',
+				footer: 'First issue in your mailbox soon',
+				confirmButtonColor: '#a5dc86',
+				timer: 6000
+			});
+			$("input.newsletter-email").val("");
+		}
+	}); 
+
 
 
 /* another elements below */
