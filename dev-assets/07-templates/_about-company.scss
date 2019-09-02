@@ -13,6 +13,10 @@
 		font-size: $font-size-3;
 		padding-bottom: $grid-base * 1.2;
 		padding-top: $grid-base * 2;
+		
+		&.values-all {
+			cursor: pointer;
+		}
 	}
 
 	h4 {
@@ -30,7 +34,7 @@
 		text-align: left;
 	}
 
-	& .c-product-selector {
+	& .c-terms-and-magazines {
 		margin-bottom: $grid-base * 5;
 		margin-top: $grid-base * 5;
 	}
@@ -41,6 +45,15 @@
 	}
 
 	p.values-content {
+		display: none;
+	}
+
+	.read-more-span {
+		color: $accent;
+		cursor: pointer;
+	}
+
+	.read-more-para {
 		display: none;
 	}
 }

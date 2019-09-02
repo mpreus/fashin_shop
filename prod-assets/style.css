@@ -256,11 +256,6 @@ a {
         margin-right: 50px; } }
   .c-product-selector a:hover {
     color: #F1C40F; }
-  .c-product-selector .read-more-span {
-    color: #F1C40F;
-    cursor: pointer; }
-  .c-product-selector .read-more-para {
-    display: none; }
 
 .c-product-card {
   margin-bottom: 50px; }
@@ -374,6 +369,8 @@ a {
     font-size: 1.5rem;
     padding-bottom: 12px;
     padding-top: 20px; }
+    .t-about-company h3.values-all {
+      cursor: pointer; }
   .t-about-company h4 {
     color: #F2F3F5;
     font-size: 1.125rem;
@@ -385,13 +382,18 @@ a {
     font-size: 1.125rem;
     line-height: 1.8;
     text-align: left; }
-  .t-about-company .c-product-selector {
+  .t-about-company .c-terms-and-magazines {
     margin-bottom: 50px;
     margin-top: 50px; }
   .t-about-company .c-pagination {
     margin-bottom: 70px;
     margin-top: 40px; }
   .t-about-company p.values-content {
+    display: none; }
+  .t-about-company .read-more-span {
+    color: #F1C40F;
+    cursor: pointer; }
+  .t-about-company .read-more-para {
     display: none; }
 
 .t-fashion {

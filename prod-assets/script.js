@@ -40,8 +40,13 @@ $(document).ready(function() {
 
 	valueTitle.on("click", function(e) {
 		e.preventDefault();
-		$(this).next().toggle(700);
-	})
+		$(this).next().toggle(800);
+	});
+
+	$("h3.values-all").on("click", function(e) {
+		e.preventDefault();
+		$("p.values-content").toggle("slow");
+	});
 	
 /* home & the others newsletter e-mail validation */
 	$("input.newsletter-button").on("click", function(e) {
