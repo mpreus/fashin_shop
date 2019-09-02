@@ -362,6 +362,68 @@ a {
 .selected {
   color: #F1C40F; }
 
+.t-about-company {
+  background-color: #444444; }
+  .t-about-company h2 {
+    color: #F1C40F;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    text-transform: uppercase; }
+  .t-about-company h3 {
+    color: #F1C40F;
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+    padding-top: 20px; }
+  .t-about-company h4 {
+    color: #F2F3F5;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    cursor: pointer; }
+  .t-about-company p {
+    color: #F2F3F5;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    text-align: left; }
+  .t-about-company .c-product-selector {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  .t-about-company .c-pagination {
+    margin-bottom: 70px;
+    margin-top: 40px; }
+  .t-about-company p.values-content {
+    display: none; }
+
+.t-fashion {
+  background-color: #444444; }
+  .t-fashion h2 {
+    color: #F1C40F;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    text-transform: uppercase; }
+  .t-fashion h3 {
+    color: #F1C40F;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+    padding-top: 20px; }
+    .t-fashion h3.fashion-term {
+      margin-bottom: 20px; }
+  .t-fashion p {
+    color: #F2F3F5;
+    display: none;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    text-align: left; }
+  .t-fashion .c-term-selector {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  .t-fashion .c-pagination {
+    margin-bottom: 70px;
+    margin-top: 40px; }
+  .t-fashion p.values-content {
+    display: none; }
+
 .t-newsletter {
   background-color: #F2F3F5;
   margin-top: 20px;
@@ -479,6 +541,15 @@ a {
   .t-promoted__code .c-btn {
     margin-left: 20px; }
 
+.t-shopper-info {
+  padding-bottom: 70px;
+  padding-top: 60px; }
+  .t-shopper-info__item {
+    margin-bottom: 60px; }
+    @media (min-width: 1200px) {
+      .t-shopper-info__item {
+        margin-bottom: 0; } }
+
 .t-site-footer {
   background-color: #444444; }
   .t-site-footer .o-row {
@@ -581,47 +652,6 @@ a {
 
 .t-site-header__cta {
   margin-top: 50px; }
-
-.t-shopper-info {
-  padding-bottom: 70px;
-  padding-top: 60px; }
-  .t-shopper-info__item {
-    margin-bottom: 60px; }
-    @media (min-width: 1200px) {
-      .t-shopper-info__item {
-        margin-bottom: 0; } }
-
-.t-about-company {
-  background-color: #444444; }
-  .t-about-company h2 {
-    color: #F1C40F;
-    font-size: 2.5rem;
-    padding-top: 30px;
-    text-transform: uppercase; }
-  .t-about-company h3 {
-    color: #F1C40F;
-    font-size: 1.5rem;
-    padding-bottom: 12px;
-    padding-top: 20px; }
-  .t-about-company h4 {
-    color: #F2F3F5;
-    font-size: 1.125rem;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    cursor: pointer; }
-  .t-about-company p {
-    color: #F2F3F5;
-    font-size: 1.125rem;
-    line-height: 1.8;
-    text-align: left; }
-  .t-about-company .c-product-selector {
-    margin-bottom: 50px;
-    margin-top: 50px; }
-  .t-about-company .c-pagination {
-    margin-bottom: 70px;
-    margin-top: 40px; }
-  .t-about-company p.values-content {
-    display: none; }
 
 .u-bg-white {
   background-color: #FFFFFF; }

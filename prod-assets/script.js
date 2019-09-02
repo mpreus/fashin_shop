@@ -35,7 +35,7 @@ $(document).ready(function() {
 		}
 	});
 
-/* our values - show & hide */
+/* about the company - our values show & hide */
 	let valueTitle = $("h4.values-title");
 
 	valueTitle.on("click", function(e) {
@@ -43,8 +43,7 @@ $(document).ready(function() {
 		$(this).next().toggle(700);
 	})
 	
-
-/* newsletter e-mail validation */
+/* home & the others newsletter e-mail validation */
 	$("input.newsletter-button").on("click", function(e) {
 		e.preventDefault();
 		
@@ -64,7 +63,7 @@ $(document).ready(function() {
 		else {
 			Swal.fire({
 				type: 'success',
-				title: 'Bravo!',
+				title: 'Thank you!',
 				text: 'You have enrolled for our newsletter!',
 				footer: 'First issue in your mailbox soon',
 				confirmButtonColor: '#a5dc86',
@@ -74,7 +73,16 @@ $(document).ready(function() {
 		}
 	}); 
 
+/* fashion site - fashion terms and magazines details show & hide */
+	$("h3.fashion-term").on("click", function(e) {
+		e.preventDefault();
+		$(this).next().toggle("slow");
+	});
 
+	$("h3.fashion-magazine").on("click", function(e) {
+		e.preventDefault();
+		$(this).next().toggle("slow");
+	})
 
 /* another elements below */
 
