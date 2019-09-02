@@ -16,7 +16,7 @@
 		padding-top: $grid-base * 2;
 
 		&.fashion-term {
-			margin-bottom: $grid-base * 2;
+			margin-bottom: $grid-base * 2.5;
 		}
 	}
 
@@ -31,6 +31,12 @@
 	& .c-term-selector {
 		margin-bottom: $grid-base * 5;
 		margin-top: $grid-base * 5;
+
+		p.fashion-magazine-descr a {
+			&:hover {
+				color: $accent;
+			}
+		}
 	}
 
 	& .c-pagination {
@@ -38,7 +44,4 @@
 		margin-top: $grid-base * 4;
 	}
 
-	p.values-content {
-		display: none;
-	}
 }

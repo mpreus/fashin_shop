@@ -410,7 +410,7 @@ a {
     padding-bottom: 12px;
     padding-top: 20px; }
     .t-fashion h3.fashion-term {
-      margin-bottom: 20px; }
+      margin-bottom: 25px; }
   .t-fashion p {
     color: #F2F3F5;
     display: none;
@@ -420,11 +420,11 @@ a {
   .t-fashion .c-term-selector {
     margin-bottom: 50px;
     margin-top: 50px; }
+    .t-fashion .c-term-selector p.fashion-magazine-descr a:hover {
+      color: #F1C40F; }
   .t-fashion .c-pagination {
     margin-bottom: 70px;
     margin-top: 40px; }
-  .t-fashion p.values-content {
-    display: none; }
 
 .t-newsletter {
   background-color: #F2F3F5;
