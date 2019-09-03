@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <script src="https://use.fontawesome.com/86a7149259.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="landing page">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="prod-assets/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="prod-assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 </head>
 <body>
 	<header class="t-site-header">
@@ -21,11 +21,11 @@
 						<div class="o-col o-col--lg75 t-site-header__menu">
 							<nav class="c-nav">
 								<a class="c-nav__item" href="index.html">Home</a>
-								<a class="c-nav__item" href="#new-products">Shop</a>
+								<a class="c-nav__item" href="index.html ">Shop</a>
 								<a class="c-nav__item" href="fashion.html">Fashion</a>
 								<a class="c-nav__item" href="accessories.html">Accessories</a>
 								<a class="c-nav__item" href="about.html">About</a>
-								<a class="c-nav__item" href="contact.html">Contact</a>
+								<a class="c-nav__item" href="#">Contact</a>
 							</nav>
 						</div>
 						<div class="o-col o-col--lg25">
@@ -53,7 +53,7 @@
 					<div class="o-col t-site-header__hero-right">
 						<span class="t-site-header__intro-text">Don't miss our new</span>
 						<h1 class="c-heading c-heading--level1">Spring Collection</h1>
-						<a class="c-btn c-btn--light t-site-header__cta" href="#new-products">Shop now
+						<a class="c-btn c-btn--light t-site-header__cta" href="index.html">Shop now
 						<span class="c-btn__icon">
 								<img src="images/btn-arrow.png" alt="icon">
 							</span>
@@ -64,86 +64,71 @@
 		</div>
 	</header>
 	
-	<!-- Produkty -->
-	<section class="t-product-list">
+	<!-- Firma -->
+	<section class="t-about-company">
 		<div class="o-container">
+			<h2 class="u-text-center u-accent">Contact</h2>
 			<div class="o-row">
-				<div class="o-col u-text-center">
-					<div class="c-product-selector">
-						<a href="#" id="new-products" class="c-product-selector__item u-accent">New products</a>
-						<a href="#" class="c-product-selector__item">Our suggestions</a>
-						<a href="#" class="c-product-selector__item">Discounts</a>
+				<div class="o-col o-col--lg50 u-text-center">
+					<div class="c-terms-and-magazines">
+						<h3>Where we are</h3>
+						<img src="images/map.png">
 					</div>
 				</div>
-			</div>
-		<!-- wiersz produktu -->
-			<div class="o-row">
-				<div class="o-col">
-					<div class="c-product-card">
-						<div class="c-product-card__big-top">
-							<img class="c-product-card__big-picture" src="images/products/p_1.jpg" alt="product1">
-							<div class="c-product-card__cart">
-								<span class="c-product-card__big-picture-text">Add to cart</span>
-							</div> 	
-						</div>
-						<div id="rating" class="c-product-card__cart-icon">
-		<!-- tu dopisać klasy dla spanów, w tym dla 'hover' i 'selected' -->
-							<span class="product1-star">
-								<i class="fa fa-star"></i>
-							</span>
-							<span class="product1-star">
-								<i class="fa fa-star"></i>
-							</span>
-							<span class="product1-star">
-								<i class="fa fa-star"></i>
-							</span>
-							<span class="product1-star">
-								<i class="fa fa-star"></i>
-							</span>
-							<span class="product1-star">
-								<i class="fa fa-star"></i>
-							</span>
-						</div>
-						<div class="hidden">
-				            <input type="radio" name="rating" value="1">
-				            <input type="radio" name="rating" value="2">
-				            <input type="radio" name="rating" value="3">
-				            <input type="radio" name="rating" value="4">
-				            <input type="radio" name="rating" value="5">
-				        </div>
 
-
-						<div class="c-product-card__bottom">
-							<div class="c-product-card__meta">
-								<div class="c-product-card__name">Short summer dress</div>
-								<div class="c-product-card__colors">
-									<span class="c-product-card__color c-product-card__color--one"></span>
-									<span class="c-product-card__color c-product-card__color--two"></span>
-									<span class="c-product-card__color c-product-card__color--three"></span>
-								</div>
-							</div>
-							<span class="c-product-card__price">£ 399</span>
-						</div>
+				<div class="o-col o-col--lg50 u-text-center">
+					<div class="c-terms-and-magazines">
+						<h3>Contact form</h3>
+						<form>
+							<label for="userName">Name</label><br>
+							<input type="text" id="userName" name="name"><br>
+							<label for="userEmail">E-mail</label><br>
+							<input type="email" id="userEmail" name="name"><br>
+							<label name="message">Message</label><br>
+							<select>
+								<option>Select topic</option>
+								<option>Question about product</option>
+								<option>Question about delivery</option>
+								<option>Remarks about the shop</option>
+								<option>Any other remarks</option>
+							</select><br>
+							<label>Enter your message</label><br>
+							<textarea cols="26" rows="6"></textarea><br>
+							<button type="submit" name="submit">Submit</button>
+						</form>
+						
+						
 					</div>
-				</div>
-				
-			</div>
-
-			<!-- back to the main site of the shop -->
-			<div class="o-row">
-				<div class="o-col u-text-center">
-					<a href="index.html"><h4 class="c-heading--level3">Back to the shop</h4></a>
-					
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- Newsletter -->
+	<div class="o-container">
+		<div class="t-newsletter">
+			<div class="o-row">
+				<div class="o-col">
+					<div class="t-newsletter__wrapper">
+						<div class="t-newsletter__info">
+							<span class="t-newsletter__heading">Subscribe to our newsletter</span>
+							<span class="t-newsletter__subheading">Subscribe and get 10% off for your purchase</span>
+						</div>
+						<div class="t-newsletter__form">
+							<form action="">
+								<input type="email" class="c-input c-input--newsletter t-newsletter__input newsletter-email" placeholder="Wprowadź adres e-mail" name="">
+								<input class="c-btn c-btn--accent t-newsletter__submit newsletter-button" type="submit" value="Zapisz">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Advantages -->
 	<div class="t-shopper-info">
 		<div class="o-container">
-
 			<div class="o-row">
 				<div class="o-col o-col--md50 o-col--lg25 t-shopper-info__item">
 					<div class="c-icon-box">
@@ -195,16 +180,16 @@
 						<div class="t-site-footer__links">
 							<div class="t-site-footer__links-first">
 								<a class="t-site-footer__link" href="index.html">Home</a>
-								<a class="t-site-footer__link" href="about.html">About us</a>
+								<a class="t-site-footer__link" href="#">About us</a>
 								<a class="t-site-footer__link" href="#">Blog</a>
 								<a class="t-site-footer__link" href="#">Contact</a>
 								<a class="t-site-footer__link" href="#">FAQ</a>
 							</div>
 							<div class="t-site-footer__links-second">
 								<a class="t-site-footer__link" href="#">Privacy</a>
-								<a class="t-site-footer__link" href="index.html">Home</a>
+								<a class="t-site-footer__link" href="#">Home</a>
 								<a class="t-site-footer__link" href="#">Discounts</a>
-								<a class="t-site-footer__link" href="#">Your purchase</a>
+								<a class="t-site-footer__link" href="product1.html">Your purchase</a>
 								<a class="t-site-footer__link" href="#">Social media</a>
 							</div>
 						</div>
