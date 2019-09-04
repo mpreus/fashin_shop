@@ -17,6 +17,13 @@
         }
     }
 
+    &--md67 {
+        @include medium-up {
+            flex: 0 0 66.6666%;
+            max-width: 66.6666%;
+        }
+    }
+
     &--md50 {
         @include medium-up {
             flex: 0 0 50%;
@@ -35,6 +42,13 @@
         @include large-up {
             flex: 0 0 33.3333%;
             max-width: 33.3333%;
+        }
+    }
+
+    &--lg67 {
+        @include large-up {
+            flex: 0 0 66.6666%;
+            max-width: 66.6666%;
         }
     }
 

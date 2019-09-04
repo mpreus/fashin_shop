@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$("p.values-content").toggle("slow");
 	});
 	
-/* home & the others newsletter e-mail validation */
+/* home & the other newsletter e-mail validation */
 	$("input.newsletter-button").on("click", function(e) {
 		e.preventDefault();
 		
