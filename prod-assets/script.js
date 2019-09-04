@@ -89,6 +89,42 @@ $(document).ready(function() {
 		$(this).next().toggle("slow");
 	})
 
+/* form validation */
+	var form = $("form#contactForm");
+	var fields = form.find("input:not(:submit), select, textarea");
+	
+	fields.on("blur", function() {
+		var field = $(this);
+            field.val();
+	/* if any input left empty, mark it as invalid: */
+        field.toggleClass("form-field--invalid", $.trim(field.val()) === "");
+	});
+
+	form.on("submit", function(e) {
+		
+		var hasErrors = false;
+		
+		fields.each(function(i, elem) {
+			var field = $(elem);
+			var emptyField = $.trim( field.val() ) === "";
+
+			field.toggleClass("form-field--invalid", emptyField);
+
+			if (emptyField) {
+				hasErrors = true;
+			}
+		});
+		
+		if (!hasErrors) {
+			form.submit();
+		}
+		else {
+			e.preventDefault();
+		}
+
+	});
+
+
 /* another elements below */
 
 
