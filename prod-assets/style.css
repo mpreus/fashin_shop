@@ -452,6 +452,38 @@ a {
   .t-contact .form-field--invalid {
     border: 2px solid #c5362b; }
 
+.t-faq {
+  background-color: #444444; }
+  .t-faq h2 {
+    color: #F1C40F;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    text-transform: uppercase; }
+  .t-faq h3 {
+    color: #F1C40F;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 12px;
+    padding-top: 20px; }
+    .t-faq h3.faq-question_active {
+      color: #F1C40F;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-bottom: 12px;
+      padding-top: 20px; }
+  .t-faq p {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    text-align: left; }
+  .t-faq .c-question-selector {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+
 .t-fashion {
   background-color: #444444; }
   .t-fashion h2 {

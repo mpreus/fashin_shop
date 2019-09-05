@@ -124,6 +124,32 @@ $(document).ready(function() {
 
 	});
 
+/* Frequently Asked Questions - accordion */
+	var questions = $("h3.faq-question"),
+		answers = $("p.faq-answer");
+		
+	
+		answers.hide();
+
+		questions.on("click", function() {
+			
+			questions.removeClass("faq-question_active");
+			answers.stop().slideUp(300);
+
+			var answer = $(this).next("p.faq-answer"),
+				isVisible = answer.is(":visible");
+
+			$(this).toggleClass("faq-question_active", !isVisible);
+
+			if (!isVisible) {
+				answer.stop().slideDown(300);
+			}
+			else {
+				answer.stop().slideUp(300);
+			}
+
+		});
+
 
 /* another elements below */
 

@@ -1,4 +1,4 @@
-.t-fashion {
+.t-faq {
 	background-color: $gray-very-dark;
 	
 	h2 {
@@ -11,37 +11,32 @@
 	h3 {
 		color: $accent;
 		cursor: pointer;
+		display: inline-block;
 		font-size: $font-size-3;
+		font-weight: 400;
 		padding-bottom: $grid-base * 1.2;
 		padding-top: $grid-base * 2;
-
-		&.fashion-term {
-			margin-bottom: $grid-base * 2.5;
-		}
+		
+		&.faq-question_active {
+			color: $accent;
+			cursor: pointer;
+			display: inline-block;
+			font-size: $font-size-3;
+			font-weight: 700;
+			padding-bottom: $grid-base * 1.2;
+			padding-top: $grid-base * 2;
+		}	
 	}
 
 	p {
-		color: $gray-light;
-		display: none;
+		color: $white;
 		font-size: $font-size-4;
 		line-height: $line-height-base * 1.2;
 		text-align: left;
 	}
 
-	& .c-term-selector {
+	& .c-question-selector {
 		margin-bottom: $grid-base * 5;
 		margin-top: $grid-base * 5;
-
-		p.fashion-magazine-descr a {
-			&:hover {
-				color: $accent;
-			}
-		}
 	}
-
-	& .c-pagination {
-		margin-bottom: $grid-base * 7;
-		margin-top: $grid-base * 4;
-	}
-
 }
