@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	
-/* star-rating system for a product */
+
+/* Star-rating system for a product */
 	let stars = $("#rating .product1-star");
 	let radios = $(":radio[name='rating']");
 
@@ -21,7 +22,7 @@ $(document).ready(function() {
 	});
 
 
-/* about the company - history 'read more / read less' */
+/* About the company - history 'read more / read less' */
 	let historyTrigger = $(".read-more-span"),
 		historyContent = $(".read-more-para");
 
@@ -35,7 +36,8 @@ $(document).ready(function() {
 		}
 	});
 
-/* about the company - our values show & hide */
+
+/* About the company - our values show & hide */
 	let valueTitle = $("h4.values-title");
 
 	valueTitle.on("click", function(e) {
@@ -47,8 +49,9 @@ $(document).ready(function() {
 		e.preventDefault();
 		$("p.values-content").toggle("slow");
 	});
-	
-/* home & the other newsletter e-mail validation */
+
+
+/* Home & the other newsletter e-mail validation */
 	$("input.newsletter-button").on("click", function(e) {
 		e.preventDefault();
 		
@@ -78,7 +81,8 @@ $(document).ready(function() {
 		}
 	}); 
 
-/* fashion site - fashion terms and magazines details show & hide */
+
+/* Fashion site - fashion terms and magazines details show & hide */
 	$("h3.fashion-term").on("click", function(e) {
 		e.preventDefault();
 		$(this).next().toggle("slow");
@@ -89,7 +93,8 @@ $(document).ready(function() {
 		$(this).next().toggle("slow");
 	})
 
-/* form validation */
+
+/* Form validation */
 	var form = $("form#contactForm");
 	var fields = form.find("input:not(:submit), select, textarea");
 	
@@ -124,6 +129,7 @@ $(document).ready(function() {
 
 	});
 
+
 /* Frequently Asked Questions - accordion */
 	var questions = $("h3.faq-question"),
 		answers = $("p.faq-answer");
@@ -152,8 +158,6 @@ $(document).ready(function() {
 
 
 /* another elements below */
-
-
 
 
 })
