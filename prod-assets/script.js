@@ -156,8 +156,4 @@ $(document).ready(function() {
 
 		});
 
-
-/* another elements below */
-
-
 })
