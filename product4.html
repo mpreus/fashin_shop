@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://use.fontawesome.com/86a7149259.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="landing page, fashion, clothes">
+    <meta name="keywords" content="HTML, CSS, SASS, RWD, jQuery">
+    <title>Fashion shop</title>
+    <link rel="stylesheet" href="prod-assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="prod-assets/script.js"></script>
+</head>
+<body>
+	<!-- Header -->
+	<header class="t-site-header">
+		<div class="t-site-header__top">
+			<div class="o-container">
+				<div>
+					<div class="o-row o-row--center-y">
+						<div class="o-col o-col--lg75 t-site-header__menu">
+							<nav class="c-nav">
+								<a class="c-nav__item" href="index.html">Home</a>
+								<a class="c-nav__item" href="#new-products">Shop</a>
+								<a class="c-nav__item" href="fashion.html">Fashion</a>
+								<a class="c-nav__item" href="accessories.html">Accessories</a>
+								<a class="c-nav__item" href="about.html">About</a>
+								<a class="c-nav__item" href="contact.html">Contact</a>
+							</nav>
+						</div>
+						<div class="o-col o-col--lg25">
+							<div class="t-site-header__icons">
+								<div class="t-site-header__icon">
+									<img src="images/m_loupe.png" alt="icon1">
+								</div>
+								<div class="t-site-header__icon">
+									<img src="images/m_star.png" alt="icon2">
+									<span class="t-site-header__number">3</span>
+								</div>
+								<div class="t-site-header__icon">
+									<img src="images/m_cart.png" alt="icon3">
+									<span class="t-site-header__number">2</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="t-site-header__hero">
+			<div class="o-container">
+				<div class="o-row">
+					<div class="o-col t-site-header__hero-right">
+						<span class="t-site-header__intro-text">Don't miss our new</span>
+						<h1 class="c-heading c-heading--level1">Spring Collection</h1>
+						<a class="c-btn c-btn--light t-site-header__cta" href="#new-products">Shop now
+						<span class="c-btn__icon">
+								<img src="images/btn-arrow.png" alt="icon">
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Products -->
+	<section class="t-product-list">
+		<div class="o-container">
+			<div class="o-row">
+				<div class="o-col u-text-center">
+					<div class="c-product-selector">
+						<a href="#" id="new-products" class="c-product-selector__item u-accent">New products</a>
+						<a href="#" class="c-product-selector__item">Our suggestions</a>
+						<a href="#" class="c-product-selector__item">Discounts</a>
+					</div>
+				</div>
+			</div>
+	<!-- Product card -->
+			<div class="o-row">
+				<div class="o-col">
+					<div class="c-product-card">
+						<div class="c-product-card__big-top">
+							<img class="c-product-card__big-picture" src="images/products/p_4.jpg" alt="product1">
+							<div class="c-product-card__cart">
+								<span class="c-product-card__big-picture-text">Add to cart</span>
+							</div> 	
+						</div>
+						<div id="rating" class="c-product-card__cart-icon">
+	<!-- stars for rating system -->
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+							<span class="product1-star">
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<div class="hidden">
+				            <input type="radio" name="rating" value="1">
+				            <input type="radio" name="rating" value="2">
+				            <input type="radio" name="rating" value="3">
+				            <input type="radio" name="rating" value="4">
+				            <input type="radio" name="rating" value="5">
+				        </div>
+
+
+						<div class="c-product-card__bottom">
+							<div class="c-product-card__meta">
+								<div class="c-product-card__name">Short summer dress</div>
+								<div class="c-product-card__colors">
+									<span class="c-product-card__color c-product-card__color--one"></span>
+									<span class="c-product-card__color c-product-card__color--two"></span>
+									<span class="c-product-card__color c-product-card__color--three"></span>
+								</div>
+							</div>
+							<span class="c-product-card__price">£ 399</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+	<!-- Back to the main site of the shop -->
+			<div class="o-row">
+				<div class="o-col u-text-center">
+					<a href="index.html"><h4 class="c-heading--level3">Back to the shop</h4></a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Advantages -->
+	<div class="t-shopper-info">
+		<div class="o-container">
+
+			<div class="o-row">
+				<div class="o-col o-col--md50 o-col--lg25 t-shopper-info__item">
+					<div class="c-icon-box">
+						<a href="#"><img src="images/zaleta-1.png" alt="ikona1" class="c-icon-box__image"></a>
+						<span class="c-icon-box__name">Free delivery</span>
+						<span class="c-icon-box__info">see details</span>
+					</div>
+				</div>
+				<div class="o-col o-col--md50 o-col--lg25 t-shopper-info__item">
+					<div class="c-icon-box">
+						<a href="#"><img src="images/zaleta-2.png" alt="ikona1" class="c-icon-box__image"></a>
+						<span class="c-icon-box__name">30-day-trial</span>
+						<span class="c-icon-box__info">with no exceptions</span>
+					</div>
+				</div>
+				<div class="o-col o-col--md50 o-col--lg25 t-shopper-info__item">
+					<div class="c-icon-box">
+						<a href="#"><img src="images/zaleta-3.png" alt="ikona1" class="c-icon-box__image"></a>
+						<span class="c-icon-box__name">Desktop - mobile</span>
+						<span class="c-icon-box__info">full compatibility</span>
+					</div>
+				</div>
+				<div class="o-col o-col--md50 o-col--lg25 t-shopper-info__item">
+					<div class="c-icon-box">
+						<a href="#"><img src="images/zaleta-4.png" alt="ikona1" class="c-icon-box__image"></a>
+						<span class="c-icon-box__name">Out of shop</span>
+						<span class="c-icon-box__info">unique cooperation</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="t-site-footer">
+		<div class="o-container">
+			<div class="o-row">
+				<div class="o-col o-col--md50 o-col--lg33">
+					<div class="t-site-footer__item">
+						<div class="t-site-footer__address">
+							<h3 class="c-heading c-heading--level3 c-heading--white">About our shop</h3>
+							<p class="t-site-footer__text t-site-footer__info">Established in 1965, the store is still one of leading retailer on the market.</p>
+							<span class="t-site-footer__text"><strong>42-45 Sidney St, Cambridge CB2 3HX, UK</strong></span>
+						</div>
+					</div>
+				</div>
+				<div class="o-col o-col--md50 o-col--lg33">
+					<div class="t-site-footer__item">
+						<div class="t-site-footer__links">
+							<div class="t-site-footer__links-first">
+								<a class="t-site-footer__link" href="index.html">Home</a>
+								<a class="t-site-footer__link" href="about.html">About us</a>
+								<a class="t-site-footer__link" href="#">Blog</a>
+								<a class="t-site-footer__link" href="contact.html">Contact</a>
+								<a class="t-site-footer__link" href="questionsandanswers.html">FAQ</a>
+							</div>
+							<div class="t-site-footer__links-second">
+								<a class="t-site-footer__link" href="#">Privacy</a>
+								<a class="t-site-footer__link" href="index.html">Home</a>
+								<a class="t-site-footer__link" href="#">Discounts</a>
+								<a class="t-site-footer__link" href="#">Your purchase</a>
+								<a class="t-site-footer__link" href="#">Social media</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="o-col o-col--md50 o-col--lg33">
+					<div class="t-site-footer__item t-site-footer__item-last">
+						<span class="t-site-footer__text">Find us on Instagram</span>
+						<div class="t-site-footer__instagrams">
+							<img class="t-site-footer__instagram" src="images/insta-1.jpg" alt="foto1">
+							<img class="t-site-footer__instagram" src="images/insta-2.jpg" alt="foto1">
+							<img class="t-site-footer__instagram" src="images/insta-3.jpg" alt="foto1">
+							<img class="t-site-footer__instagram" src="images/insta-4.jpg" alt="foto1">
+						</div>
+						<span class="t-site-footer__text"><strong>info@anyshopdomain.co.uk<br/> +44 223 414 709</strong></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="t-site-footer__copy">
+			<div class="o-container u-text-center">
+				Copyright 2019 by Shop © All rights reserved | Graphics items designed by Freepik.com<br>Designed as a single-page project by Strefa Kursów, enhanced and developed with jQuery by Maciej Preus
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

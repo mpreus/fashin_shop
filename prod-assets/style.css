@@ -246,6 +246,8 @@ a {
   font-weight: bold;
   margin-left: 5px;
   margin-right: 5px; }
+  .c-pagination__item:hover {
+    color: #F1C40F; }
 
 .c-product-selector {
   display: inline-block; }

@@ -3,6 +3,9 @@
 		font-weight: bold;
 		margin-left: $grid-base * .5;
 		margin-right: $grid-base * .5;
+		&:hover {
+			color: $accent;
+		}
 	}
 	
 }
