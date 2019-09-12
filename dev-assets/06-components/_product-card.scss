@@ -115,6 +115,19 @@
 		}
 	}
 
+	&__big-picture4 {
+		height: 240px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 240px;
+		
+		&:hover {
+		filter: contrast(108%);
+		opacity: 1.2;
+		}
+	}
+
 	&__big-picture-text {
 		padding-left: 65px;
 	}

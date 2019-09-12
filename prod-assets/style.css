@@ -349,6 +349,15 @@ a {
     .c-product-card__big-picture:hover {
       filter: contrast(108%);
       opacity: 1.2; }
+  .c-product-card__big-picture4 {
+    height: 240px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px; }
+    .c-product-card__big-picture4:hover {
+      filter: contrast(108%);
+      opacity: 1.2; }
   .c-product-card__big-picture-text {
     padding-left: 65px; }
   .c-product-card__big-top {
