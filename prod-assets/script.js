@@ -154,19 +154,13 @@ $(document).ready(function() {
 	imageToShow.animate({ // initial value
 		opacity: .01
 	});
-
+	
 	$(window).on("scroll", function() {
 		let height = $(window).scrollTop();
-		
 		if (height > 500) {
 			imageToShow.animate({
 				opacity: 1
 			}, 600);
-		}
-		else if (height === 700) {
-			imageToShow.animate({ // initial value
-			opacity: .01
-			});
 		}
 	});
 	
