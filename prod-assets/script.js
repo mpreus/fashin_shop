@@ -126,34 +126,55 @@ $(document).ready(function() {
 		else {
 			e.preventDefault();
 		}
-
 	});
 
 
 /* Frequently Asked Questions - accordion */
 	var questions = $("h3.faq-question"),
 		answers = $("p.faq-answer");
+	
+	answers.hide();
+	questions.on("click", function() {
+		
+		questions.removeClass("faq-question_active");
+		answers.stop().slideUp(300);
+		var answer = $(this).next("p.faq-answer"),
+			isVisible = answer.is(":visible");
+		$(this).toggleClass("faq-question_active", !isVisible);
+		if (!isVisible) {
+			answer.stop().slideDown(300);
+		}
+		else {
+			answer.stop().slideUp(300);
+		}
+	});
+
+/* Image at 'accessories.html' animation */
+	let imageToShow = $("#underConstruction");
+	imageToShow.animate({ // initial value
+		opacity: .01
+	});
+
+	$(window).on("scroll", function() {
+		let height = $(window).scrollTop();
+		
+		if (height > 500) {
+			imageToShow.animate({
+				opacity: 1
+			}, 600);
+		}
+		else if (height === 700) {
+			imageToShow.animate({ // initial value
+			opacity: .01
+			});
+		}
+	});
+	
+	
+
 		
 	
-		answers.hide();
-
-		questions.on("click", function() {
-			
-			questions.removeClass("faq-question_active");
-			answers.stop().slideUp(300);
-
-			var answer = $(this).next("p.faq-answer"),
-				isVisible = answer.is(":visible");
-
-			$(this).toggleClass("faq-question_active", !isVisible);
-
-			if (!isVisible) {
-				answer.stop().slideDown(300);
-			}
-			else {
-				answer.stop().slideUp(300);
-			}
-
-		});
-
-})
+	
+	
+	
+});
